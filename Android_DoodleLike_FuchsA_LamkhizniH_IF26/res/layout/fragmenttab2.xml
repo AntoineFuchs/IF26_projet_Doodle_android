@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android_doodlelike_fuchsa_lamkhiznih_if26.main.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:text="Topic :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_editxt"
+            android:hint=""
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:text="Description :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_editxt"
+            android:inputType="textMultiLine"
+            android:lines="5" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnChangeDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="showDatePickerDialog"
+            android:text="Ajouter Date"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/listView_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+        </ListView>
+
+        <Button
+            android:id="@+id/validerBouton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="sendFeedback"
+            android:text="Send" >
+        </Button>
+    </LinearLayout>
+
+</com.android_doodlelike_fuchsa_lamkhiznih_if26.main.VerticalScrollview>
