@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.android_doodlelike_fuchsa_lamkhiznih_if26.main.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+<controlleur.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ScrollView01"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -14,12 +14,12 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/topic"
+            android:id="@+id/Sujet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-            android:text="Topic :"
+            android:text="Sujet :"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -55,8 +55,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/buttonshape"
             android:onClick="showDatePickerDialog"
             android:text="Ajouter Date"
@@ -64,10 +64,28 @@
             android:textSize="14sp" />
 
         <ListView
-            android:id="@+id/listView_items"
+            android:id="@+id/listView_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btnInviter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="showInvitePickerDialog"
+            android:text="Ajouter quelqun"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/listView_invites"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-             >
+            android:layout_height="match_parent" >
         </ListView>
 
         <Button
@@ -80,4 +98,4 @@
         </Button>
     </LinearLayout>
 
-</com.android_doodlelike_fuchsa_lamkhiznih_if26.main.VerticalScrollview>
+</controlleur.VerticalScrollview>
