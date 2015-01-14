@@ -10,5 +10,24 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_event">EventActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="email">Email :</string>
+    <string name="registerMe">Register Me</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+    <string name="defaultmsg">Message sent by server will appear here.</string>
+    <string name="msg_title">Message</string>
+    <string name="user_title">Hello User</string>
+    <string name="motdepasse">Mot de passe :</string>
+    <string name="valider">Valider</string>
+    <string name="creerCompte">Créer compte</string>
+    <string name="mdpOublie">Mot de passe oublié</string>
+        <string name="ajouter">Ajouter</string>
+            <string name="ajouterDate">Ajouter Date</string>
+                <string name="ajouterQQun">Ajouter quelqu\'un</string>
+                    <string name="creer">Créer</string>
+                                        <string name="sujet">Sujet :</string>
+                    
+                                                            <string name="description">Description :</string>
+                                        
+                
 
 </resources>

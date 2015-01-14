@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-            android:text="Sujet :"
+            android:text="@string/sujet"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-            android:text="Description :"
+            android:text="@string/description"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -58,8 +58,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/buttonshape"
-            android:onClick="showDatePickerDialog"
-            android:text="Ajouter Date"
+            android:text="@string/ajouterDate"
             android:textColor="#FFFFFF"
             android:textSize="14sp" />
 
@@ -77,8 +76,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/buttonshape"
-            android:onClick="showInvitePickerDialog"
-            android:text="Ajouter quelqun"
+            android:text="@string/ajouterQQun"
             android:textColor="#FFFFFF"
             android:textSize="14sp" />
 
@@ -93,8 +91,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="sendFeedback"
-            android:text="Send" >
+            android:text="@string/creer" >
         </Button>
     </LinearLayout>
 

@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<controlleur.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:scrollbars="vertical"
-    tools:context="com.android_doodlelike_fuchsa_lamkhiznih_if26.main.EventActivity" >
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,9 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="#f3f1ca"
-            android:text="EditTextInfo                       
-			Exemple
-            EditTextInfo"
+            android:text="EditTextInfo"
             android:textColor="#333333"
             android:textSize="16sp" >
         </TextView>
@@ -69,4 +67,4 @@
         </Button>
     </LinearLayout>
 
-</ScrollView>
+</controlleur.VerticalScrollview>

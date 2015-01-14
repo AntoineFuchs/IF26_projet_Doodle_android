@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <array name="textArray">
-        <item>First</item>
-        <item>Second</item>
-        <item>Third</item>
-        <item>Fourth</item>
-        <item>Fifth</item>
+    <array name="choixActionHoraire">
+        <item>Inscription/Désinscription</item>
+        <item>Liste des invités</item>
     </array>
 
 </resources>

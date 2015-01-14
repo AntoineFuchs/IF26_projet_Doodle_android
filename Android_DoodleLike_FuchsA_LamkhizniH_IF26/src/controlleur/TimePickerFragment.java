@@ -2,23 +2,22 @@ package controlleur;
 
 import java.util.Calendar;
 import java.util.List;
-
-import form.DateForm;
-import listviews.DateFormAdapter;
+import modele.DateForm;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.widget.TimePicker;
 import android.app.TimePickerDialog;;
+
+//Utiliser dans Fragment 2 pour choisir une heure
 
 public  class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
 
 	int position;
 	List<DateForm> listDatesPicker;
 	DateFormAdapter dateFormAdapter;
-	
+
 	public TimePickerFragment (int pos,List<DateForm> list,DateFormAdapter adapt){
 		position = pos;
 		dateFormAdapter = adapt;
@@ -36,8 +35,8 @@ public  class TimePickerFragment extends DialogFragment implements TimePickerDia
 	}
 
 	public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-		listDatesPicker.get(position).addHours(hourOfDay);
-		listDatesPicker.get(position).addMinutes(minute);
-		   dateFormAdapter.notifyDataSetChanged();
+		listDatesPicker.get(position).addHeureForm(Integer.toString(hourOfDay),Integer.toString(minute));
+
+		dateFormAdapter.notifyDataSetChanged();
 	}
 }

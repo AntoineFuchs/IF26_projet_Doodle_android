@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,10 +16,9 @@
         android:orientation="vertical" >
 
         <LinearLayout
-            android:id="@+id/uname_block"
+            android:id="@+id/blockInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:orientation="horizontal" >
 
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Email :"
+android:text="@string/email"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
@@ -37,8 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="8dp"
+                 android:layout_marginStart="8dp"
                 android:inputType="textWebEmailAddress"
-                android:paddingLeft="5dp"
                 android:text=""
                 android:textSize="13sp" />
         </LinearLayout>
@@ -47,8 +47,6 @@
             android:id="@+id/pwd_block"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/uname_block"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:orientation="horizontal" >
 
@@ -57,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="password :"
+android:text="@string/motdepasse"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
@@ -67,44 +65,38 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="8dp"
+                 android:layout_marginStart="8dp"
                 android:inputType="textPassword"
-                android:paddingLeft="5dp"
                 android:text=""
                 android:textSize="13sp" />
         </LinearLayout>
 
-        <Button
+   
+          <Button
             android:id="@+id/validerBouton"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Login" />
-
-        <LinearLayout
-            android:id="@+id/butLay"
-            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/valider"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+          
+            <Button
+            android:id="@+id/butonRegister"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/uname_block"
-            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
             android:layout_marginTop="40dp"
-            android:gravity="center|bottom"
-            android:orientation="horizontal" >
+            android:background="@drawable/smallbuttonshape"
+            android:text="@string/creerCompte"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
 
-            <Button
-                android:id="@+id/but1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="Créer compte" />
 
-            <Button
-                android:id="@+id/but2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="Mot de passe oublié" />
-        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

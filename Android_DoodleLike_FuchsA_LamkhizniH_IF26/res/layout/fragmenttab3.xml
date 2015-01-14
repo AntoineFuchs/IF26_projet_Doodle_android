@@ -1,3 +1,4 @@
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,22 +18,22 @@
 
         <EditText
             android:id="@+id/newContactEmail"
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text=""
                                 android:inputType="textWebEmailAddress"
             
-            android:hint="Email">
+            >
         </EditText>
 
         <Button
             android:id="@+id/addContactBouton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/ajouter"
             
-            android:onClick="addNewContact"
-            android:text="Ajouter" >
+             >
         </Button>
     </LinearLayout>
 

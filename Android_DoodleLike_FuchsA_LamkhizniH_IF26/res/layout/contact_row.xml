@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="sujetList"
+            android:text=""
             android:textColor="#666666"
             android:textSize="15sp" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:ellipsize="end"
-            android:text="descriptionList"
+            android:text=""
             android:textColor="#666666"
             android:textSize="15sp" />
     </LinearLayout>
@@ -43,7 +43,7 @@
     android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:gravity="start"
-        android:text="auteurList"
+        android:text=""
         android:textColor="#333333"
         android:textSize="15sp" />
 

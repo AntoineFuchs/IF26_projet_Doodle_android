@@ -2,6 +2,7 @@ package controlleur;
 
 //http://stackoverflow.com/questions/3495890/how-can-i-put-a-listview-into-a-scrollview-without-it-collapsing/23315696#23315696
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -44,13 +45,14 @@ public class VerticalScrollview extends ScrollView{
                     Log.i("VerticalScrollview", "onInterceptTouchEvent: UP super false" );
                     return false;
 
-            default: Log.i("VerticalScrollview", "onInterceptTouchEvent: " + action ); break;
+            default: Log.i("VerticalScrollview", "onInterceptTouchEvent action : " + action ); break;
         }
 
         return false;
     }
 
-    @Override
+    @SuppressLint("ClickableViewAccessibility")
+	@Override
     public boolean onTouchEvent(MotionEvent ev) {
         super.onTouchEvent(ev);
         Log.i("VerticalScrollview", "onTouchEvent. action: " + ev.getAction() );
