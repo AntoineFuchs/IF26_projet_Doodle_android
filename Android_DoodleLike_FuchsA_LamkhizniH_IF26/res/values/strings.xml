@@ -7,4 +7,8 @@
     <string name="Fragment1">This is Fragment 1</string>
     <string name="Fragment2">This is Fragment 2</string>
     <string name="Fragment3">This is Fragment 3</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
 </resources>
